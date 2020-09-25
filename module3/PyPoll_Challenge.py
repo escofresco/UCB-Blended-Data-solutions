@@ -40,7 +40,8 @@ with open(file_to_load) as election_data:
 
     # For each row in the CSV file.
     for row in reader:
-
+        ## Header:
+        ## Ballot ID,County,Candidate
         # Add to the total vote count
         total_votes = total_votes + 1
 
@@ -48,7 +49,7 @@ with open(file_to_load) as election_data:
         candidate_name = row[2]
 
         # 3: Extract the county name from each row.
-
+        county_name = row[1]
 
         # If the candidate does not match any existing candidate add it to
         # the candidate list
