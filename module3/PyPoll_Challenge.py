@@ -17,8 +17,9 @@ total_votes = 0
 candidate_options = []
 candidate_votes = {}
 
-# 1: Create a county list and county votes dictionary.
-
+# 1: Create a county set and county votes dictionary.
+counties = set()
+county_votes = dict()
 
 
 # Track the winning candidate, vote count and percentage
